@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+    height: 100vh;
+    font-family: "Anton SC", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: beige;
+    padding: 15px 25px;
+    border: solid 2px black;
+    border-radius: 4px;
+}
+
+#lista {
+    list-style: none;
+    background-color: rgb(226, 198, 253);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#lista li {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: rgb(45, 45, 45);
+    margin: 10px 0;
+    background-color: aliceblue;
+}
+
+#agregar {
+    font-family: "Anton SC", sans-serif;
+    background-color: rgb(255, 151, 113);
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#agregar:hover {
+    background-color: rgb(180, 105, 78);
+}

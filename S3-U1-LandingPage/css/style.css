@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, .cerrar {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: "Poppins", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MI CSS */
+
+.header-top {
+    background-color: #e8999f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 200;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+    padding: 18px 50px;
+}
+
+.menu-burger {
+    width: 25px;
+    color:#009d96;
+    display: none;
+}
+
+.logo img {
+    width: 145px;
+}
+
+.cerrar {
+    display: none;
+}
+
+.menu nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.menu a {
+    color: #009d96;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.usuario {
+    display: flex;
+    gap: 15px;
+}
+
+.usuario svg {
+    width: 20px;
+    color: #009d96;
+}
+
+.masterhead{
+    position: relative;
+}
+
+.masterhead img {
+    width: 100%;
+}
+
+.contenido-master{
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.masterhead h3 {
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.masterhead h1 {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.masterhead button {
+    background-color: #e8999f;
+    border: 1px transparent solid;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 4px;
+    padding: 15px 25px;
+    transition: 0.5s ease;
+}
+
+.masterhead button:hover {
+    color:#e8999f;
+    background-color: transparent;
+    border: 1px #e8999f solid;
+}
+
+.flotante{
+    background-color: #e8999f;
+    border-radius: 120px;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* responsive */
+
+
+@media (width <= 768px){
+    .menu-burger {
+        display: block;
+    }
+
+    .cerrar {
+        display: block;
+    }
+
+    .menu {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        width: 350px;
+        left:-350px;
+        z-index: 999;
+    }
+
+    .visible {
+        left:0;
+    }
+
+    .menu nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 25px;
+        height: 100vh;
+        padding: 50px 0 0 50px;
+    }
+}
