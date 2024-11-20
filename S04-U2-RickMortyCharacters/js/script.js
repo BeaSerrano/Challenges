@@ -30,7 +30,7 @@
 
 //! Opción 2 ---> sin DOMContentLoaded, con función
 
-let currentPage = 1;
+/* let currentPage = 1;
 const apiUrl = 'https://rickandmortyapi.com/api/character/?page=';
 const prevPageButton = document.getElementById('prev-page');
 const nextPageButton = document.getElementById('next-page');
@@ -102,7 +102,28 @@ prevPageButton.addEventListener('click', () => {
 nextPageButton.addEventListener('click', () => {
     currentPage++;
     todosPersonajes(currentPage)
+}) */
+
+
+
+
+
+
+//! Clase refuerzo
+// Enlace a documentación de método de respuesta .json() --> https://developer.mozilla.org/en-US/docs/Web/API/Response/json
+
+// realizamos una petición a un servidor con fetch usando una url
+/* fetch('https://rickandmortyapi.com/api/character/?page=1')
+.then((res) => {
+    // respuesta
+    console.log('res 😶‍🌫️', res); // devuelde un objeto que es la respuesta a esa petición
+    return res.json() // el método de respuesta .json() devuelve una promesa con los datos de la petición de la url
+}) // manejo la promesa de la respuesta con otro .then 
+.then((data) => {
+    // promesa con los datos de la api
+    console.log('data 🤪', data);
 })
-
-
-//! Opción 3 ---> sin plantilla, con atributos
+.catch((err) => {
+    // error
+    console.error('Error fetch url rickymorty 🔴', err);
+}) */
