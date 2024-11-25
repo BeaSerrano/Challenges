@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3e3e3;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+li, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;        
+}
+
+#listaUsuarios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.imagenUsuario {
+  width: 110px;
+  padding: 10px;
+}
+
+.divPersona { 
+  display: flex;
+}
+
+.listaTexto {
+  border: 2px, rgb(119, 118, 118), solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+.listaCompania {
+  padding: 10px;
+}
+
+
+.listado{
+  border: 2px, rgb(119, 118, 118), solid;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:5px;
+}
