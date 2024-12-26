@@ -1,0 +1,136 @@
+/* ------------------------------------------ */
+/* --------------- RESUELTO 1 --------------- */
+/* ------------------------------------------ */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  color: #afaaaa;
+  margin: 40px 0;
+  font-size: 45px;
+}
+
+.center-pop-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.pop-up {
+  background: rgb(224, 222, 222);
+  z-index: 100;
+  width: 250px;
+  border: #333 solid;
+  border-radius: 10px;
+  padding: 20px 0 20px 35px;
+}
+
+img {
+  width: 200px;
+}
+
+h2 {
+  font-size: 16px;
+  color: #afaaaa;
+  display: flex;
+  justify-content: center;
+}
+
+#countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h3 {
+  display: flex;
+  justify-content: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.button-cerrar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ------------------------------------------ */
+/* --------------- RESUELTO 2 --------------- */
+/* ------------------------------------------ */
+
+/* body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #afaaaa;
+  margin: 40px 0;
+  font-size: 45px;
+}
+
+#countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.card img,
+.info-detalle img {
+  width: 100%;
+}
+
+.card h2 {
+  padding: 10px;
+}
+
+.countries-information {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.319);
+}
+
+.info-detalle {
+  background-color: white;
+  width: 500px;
+  padding: 10px;
+}
+
+.visible {
+  display: flex;
+} */

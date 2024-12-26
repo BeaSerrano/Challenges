@@ -1,10 +1,12 @@
 //! Opción 1 --> con DOMContentLoaded
 
-/* document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const principal = document.getElementById('character-list');
 
     fetch('https://rickandmortyapi.com/api/character/?page=1')
     .then((res) => {
+        console.log(res);
+        
         if(!res.ok){ // dentro de la res, ok = false
             console.log('Algo ha salido mal');
         }
@@ -26,7 +28,7 @@
         console.error(err);
         principal.innerText = 'Algo ha salido mal';
     })
-}) */
+})
 
 //! Opción 2 ---> sin DOMContentLoaded, con función
 
