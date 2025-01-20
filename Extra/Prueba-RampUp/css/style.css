@@ -1,0 +1,494 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@300;900&display=swap');
+
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS Global */
+
+h1, h2, h3, h4, h5, h6, 
+button, a, label {
+    font-family: "Orbitron", serif;
+}
+
+p, input, textarea {
+    font-family: "Roboto", serif;
+    line-height: 1.5em;
+}
+
+button {
+    background-color: #ff4553;
+    border: 1px #ff4553 solid;
+    font-size: 15px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    color:#ff4553;
+    background-color: transparent;
+    cursor: url('../img/cursor.png'), auto;
+}
+
+a:hover{
+    cursor: url('../img/cursor.png'), auto;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background-color: white;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    flex-wrap: wrap;
+}
+
+.header nav .logo {
+    width: 200px;
+}
+
+.menu-burger {
+    display: none;
+    cursor: url('../img/cursor.png'), auto;
+}
+
+.menu-burger img {
+    width: 80px;
+}
+
+.close {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: #ff4553;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Masterhead */
+
+.masterhead{
+    position: relative;
+}
+
+.masterhead img {
+    width: 100%;
+}
+
+.contenido-masterhead {
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    background: linear-gradient(0deg, rgba(25,25,25,1) 0%, rgba(172,172,172,0.1) 100%);
+}
+
+.contenido-masterhead h1 {
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+    margin-left: 60px;
+}
+
+.contenido-masterhead p {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    width: 25%;
+    margin-left: 60px;
+}
+
+.masterhead button {
+    margin-left: 60px;
+    margin-bottom: 80px;
+}
+
+/* Nosotros section */
+
+#nosotros {
+    background-color: #1e1e1e;
+    padding: 70px 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+#nosotros h2 {
+    color:#ff4553;
+    font-size: 30px;
+}
+
+#nosotros p {
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Servicios section */
+
+#servicios {
+    background-color: #1e1e1e;
+    padding: 70px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#servicios h2,
+#equipo h2 {
+    color:#ff4553;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#servicios .seccion-servicios {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.texto-servicios  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-servicios article h3 {
+    color:white;
+    display:inline;
+    border-bottom: solid 2px #ff4553;
+    font-size: 20px;
+}
+
+#servicios p {
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 20px 40% 80px 0;
+}
+
+#servicios button {
+    margin-top: 80px;
+}
+
+/* Equipo section */
+
+#equipo {
+    padding: 70px 5%;
+}
+
+.equipo-personas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:80px;
+    text-align: center;
+}
+
+.equipo-personas .persona h3{
+    font-size: 22px;
+    margin: 15px 0 8px 0;
+}
+
+.equipo-personas .persona h4{
+    font-size: 15px;
+    color:#ff4553;
+    margin-bottom: 15px;
+}
+
+.equipo-personas .persona p{
+    font-size: 15px;
+}
+
+/* Contato section */
+
+#contacto {
+    background-color: #1e1e1e;
+    padding: 70px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#contacto .texto-contacto {
+    width: 50%;
+}
+
+#contacto h2 {
+    color:#ff4553;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+#contacto p {
+    color:white;
+    font-size: 15px;
+    width: 70%;
+}
+
+#contacto p:nth-last-of-type(1) {
+    margin-top: 15px;
+}
+
+#contacto .formulario-contacto {
+    width: 450px;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario-contacto label {
+    margin-bottom: 8px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    margin-bottom: 20px;
+    color:white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px white solid;
+    background-color: #1e1e1e;
+}
+
+.formulario-contacto textarea {
+    min-height: 150px;
+    max-width: 450px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto input:focus-visible,
+.formulario-contacto input:hover,
+.formulario-contacto textarea:focus,
+.formulario-contacto textarea:focus-visible,
+.formulario-contacto textarea:hover {
+    border: 1px white solid;
+    outline: none;
+    border: 1px #ff4553 solid;
+    box-shadow: 0 0 7px #ff4553;
+    cursor: url('../img/cursor.png'), auto;
+}
+
+.formulario-contacto button {
+    width: 170px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #ff4553;
+    padding: 70px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer nav ul li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer nav ul li a {
+    color:#1e1e1e;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    color:white;
+}
+
+footer .rrss img {
+    width: 50px;
+    margin: 0 5px;
+    cursor: url('../img/cursor.png'), auto;
+}
+
+footer .rrss img:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+
+/* MEDIA QUERIES */
+
+@media (width <= 768px){
+    .menu-burger {
+        display: block;
+    }
+
+    .close {
+        display: block;
+        cursor: url('../img/cursor.png'), auto;
+        color:#ff4553;
+    }
+
+    .menu {
+        background-color:#1e1e1e;
+        position: absolute;
+        top: -240px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .menu a {
+        color:white;
+    }
+
+    .menu .close {
+        align-self: flex-end;
+        padding-right: 100px;
+        font-family: "Orbitron", serif;
+        font-size: 20px;
+    }
+
+    .visible {
+        top: 140px;
+    }
+
+    .contenido-masterhead {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido-masterhead h1, 
+    .contenido-masterhead p,
+    .contenido-masterhead button {
+        margin-left: 0;;
+    }
+
+    .masterhead button {
+        margin-bottom: 0;
+    }
+
+    .contenido-masterhead p {
+        width: 90%;
+        text-align: center;
+    }
+
+    #servicios {
+        padding: 30px 5%;
+    }
+
+    #servicios .seccion-servicios {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #servicios p {
+        margin: 20px 0 40px 0;
+    }
+
+    #servicios img {
+        display: none;
+    }
+
+    #servicios button {
+        margin-top: 0;
+    }
+
+    .equipo-personas {
+        flex-wrap: wrap;
+    }
+
+    #contacto {
+        padding: 70px 0;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contacto p {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

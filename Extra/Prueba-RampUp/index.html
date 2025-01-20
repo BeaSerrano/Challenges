@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketBridge + EjerciciosJS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="#"><img class="logo" src="./img/logo-header.png" alt="Logo Rocket Bridge"></a>
+            <div id="menu-burger" class="menu-burger">
+                <img src="./img/mobile-burger.png" alt="mobile RocketBridge">
+            </div>
+            <ul id="menu" class="menu">
+                <li id="close" class="close">X</li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="masterhead">
+            <img src="./img/masterhead.png" alt="RocketBridge">
+            <div class="contenido-masterhead">
+                <h1>Tu Viaje al Espacio Empieza Aqui</h1>
+                <p>Alquiler de cohetes comerciales y vuelos suborbitales para nacer realldad tus misiones espaciales</p>
+                <button class="btn-masterhead" href="#contacto">Empieza el viaje</button>
+            </div>
+        </section>
+        <section id="nosotros">
+            <h2>Construyendo un Puente hacia las Estrellas</h2>
+            <p><strong>RocketBridge</strong> fue fundada en 2029 con la visión de hacer del espacio un lugar accesible y aprovechable para todos. Inspirados por la pasión por la exploración espacial, un grupo de ingenieros, científicos y emprendedores unieron fuerzas para crear una compañía que eliminara las barreras tradicionales de costo y complejidad en los lanzamientos espaciales. Rocket Bridge <strong>nació en una pequeña oficina con grandes ideas y el firme propósito de democratizar el acceso al espacio</strong>, permitiendo a personas y empresas de todo el mundo cumplir sus sueños de llegar más lejos. Desde entonces, nos hemos consolidado como líderes en alquiler de cohetes, con un enfoque en la innovación y la seguridad.</p>
+            <img src="./img/icono-bajar.png" alt="icono sección servicios" width="20">
+        </section>
+        <section id="servicios">
+            <h2>NUESTROS SERVICIOS</h2>
+            <div class="seccion-servicios">
+                <div class="texto-servicios">
+                    <article>
+                        <h3>Lanzamientos Comerciales a Órbita Baja</h3>
+                        <p>Alcanza el espacio sin complicaciones Rocket Bridge ofrece lanzamientos a órbita baja, ideales para empresas que desean colocar satélites comerciales, equipos de observación o proyectos de telecomunicaciones.</p>
+                    </article>
+                    <article>
+                        <h3>Experiencia de Vuelo Suborbital</h3>
+                        <p>Vuela más allá de tus sueños y experimenta la gravedad cero Para entusiastas del espacio y exploradores modernos, Rocket Bridge ofrece una experiencia de vuelo suborbital que te permitirá vivir la gravedad cero y observar la Tierra desde una perspectiva única.</p>
+                    </article>
+                    <article>
+                        <h3>Laboratorio Espacial en Microgravedad</h3>
+                        <p>Lleva tus investigaciones científicas al próximo nivel Rocket Bridge facilita el acceso a un laboratorio espacial en microgravedad, ideal para investigaciones avanzadas en condiciones únicas.</p>
+                    </article>
+                </div>
+                <div class="imagen-servicios">
+                    <img src="./img/servicios.png" alt="servicios RocketBridge">
+                </div>
+            </div>
+            <button href="#contacto">Contacta con nosotros</button>
+        </section>
+        <section id="equipo">
+            <h2>EL EQUIPO</h2>
+            <div class="equipo-personas">
+                <article class="persona">
+                    <img src="./img/persona-1.png" alt="Marina Márquez RocketBridge">
+                    <h3>Marina Márquez</h3>
+                    <h4>Fundadora y CEO</h4>
+                    <p>Ingeniera aeroespacial con más de 20 años de experiencia en tecnología de lanzamiento y propulsión, Marina fundó Rocket Bridge con la misión de hacer el espacio más accesible. Su liderazgo y pasión por la innovación han sido el motor que ha llevado a Rocket Bridge a convertirse en una de las empresas más confiables en el mercado.</p>
+                </article>
+                <article class="persona">
+                    <img src="./img/persona-2.png" alt="Laura Reyes RocketBridge">
+                    <h3>Laura Reyes</h3>
+                    <h4>Fundadora y CEO</h4>
+                    <p>Especialista en logística y gestión de operaciones espaciales, Laura es la mente maestra detrás de la coordinación de lanzamientos y la supervisión de todos los aspectos técnicos. Su enfoque en la precisión y la eficiencia ha permitido a Rocket Bridge cumplir consistentemente con los plazos y garantizar la seguridad de cada misión.</p>
+                </article>
+                <article class="persona">
+                    <img src="./img/persona-3.png" alt="Tomás Gutiérrez RocketBridge">
+                    <h3>Tomás Gutiérrez</h3>
+                    <h4>Fundadora y CEO</h4>
+                    <p>Ingeniero de sistemas con un amplio conocimiento en desarrollo de software y sistemas de navegación, Tomás lidera la creación e implementación de los sistemas informáticos de Rocket Bridge. Su experiencia en tecnología espacial asegura que cada misión esté respaldada por sistemas seguros y de última generación.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="texto-contacto">
+                <h2>Contacto</h2>
+                <p>Queremos ayudarte a alcanzar tus metas en el espacio. Si tienes preguntas sobre nuestros servicios o deseas información adicional sobre cómo comenzar una misión, no dudes en ponerte en contacto con nosotros.</p>
+                <p><strong>¡Estamos listos para construir un puente entre tu visión y el cosmos!</strong></p>
+            </div>
+            <div class="formulario-contacto">
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+
+                <label for="email">Correo elctrónico</label>
+                <input type="email" id="email">
+
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject">
+
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message"></textarea>
+
+                <button type="submit">Enviar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="./img/logo-footer.png" alt="Logo Rocket Bridge" width="250">
+        <nav>
+            <ul class="menu-footer">
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="rrss">
+            <a><img src="./img/icono-x.png" alt="RocketBridge X"></a>
+            <a><img src="./img/icono-i.png" alt="RocketBridge Instagram"></a>
+            <a><img src="./img/icono-w.png" alt="RocketBridge Whatsapp"></a>
+            <a><img src="./img/icono-y.png" alt="RocketBridge Youtube"></a>
+        </div>
+    </footer>
+    <!-- Script Landing RocketBridge-->
+    <script src="./js/script-landing.js"></script>
+
+    <!-- Scripts Rjercicios JS-->
+    <script src="./js/ejercicio1.js"></script>
+    <script src="./js/ejercicio2.js"></script>
+    <script src="./js/ejercicio3.js"></script>
+</body>
+</html>
