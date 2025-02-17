@@ -16,7 +16,6 @@ let usuarios = [
 
 app.get('/usuarios', (req, res) => {
     res.json(usuarios);
-    console.log(req.params)
 });
 
 app.post('/usuarios', (req, res) => {
