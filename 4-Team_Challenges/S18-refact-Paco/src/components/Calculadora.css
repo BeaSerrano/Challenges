@@ -1,0 +1,36 @@
+.calculadora {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calculadora input {
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.calculadora button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calculadora button:hover {
+    background: #357ABD;
+}
+
+.calculadora p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}

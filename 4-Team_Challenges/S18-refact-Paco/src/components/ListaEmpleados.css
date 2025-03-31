@@ -1,0 +1,32 @@
+.empleados {
+    padding: 20px;
+    background-color: #fffeee;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.empleados h2 {
+    text-align: center;
+    color: #393939;
+}
+
+.empleados ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.empleados li {
+    background: white;
+    min-width: 250px;
+    margin: 10px 10px;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.empleados p {
+    margin: 5px 0;
+}
